@@ -34,5 +34,9 @@ Here are some examples:
   
  Beta version of Twilio SMS deployment is also available. Stay tuned!
  
+ Sources:
+ * [OpenAI Documentation](https://beta.openai.com/docs/introduction)
+ * [Twilio blog](https://www.twilio.com/blog/openai-gpt-3-chatbot-python-twilio-sms)
+ 
  Maintained by **[Manan Paneri](github.com/manan-paneri-99)**
   
