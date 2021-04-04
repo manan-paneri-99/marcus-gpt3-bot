@@ -32,7 +32,11 @@ Here are some examples:
   I hope you liked your conversation with me. For more inspiring travel    destinations, keep visiting Marcus.ai'
   ```
   
- Beta version of Twilio SMS deployment is also available. Stay tuned!
+ Beta version of Twilio SMS deployment is also available.
+ 
+ ![marcus_sms](marcus_sms.jpg)
+ 
+ Stay tuned!
  
  Sources:
  * [OpenAI Documentation](https://beta.openai.com/docs/introduction)
