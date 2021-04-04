@@ -2,10 +2,12 @@ import os
 from dotenv import load_dotenv
 import openai
 
+
 load_dotenv()
 openai.api_key = os.environ.get("OPENAI_KEY")
 completion = openai.Completion()
 
+# Initial prompt to give an idea of the domain and tone we eant the chatbot to have
 start_chat_log = '''This is Marcus, your travel guide bot. I am informative, creative, and knows a lot about landmarks.
 \n
 Human: Hello, who are you?
@@ -18,13 +20,22 @@ AI: Goa has peaceful beaches and fun-filled pubs/clubs.
 
 
 def ask(question, chat_log=None):
+    """
+    :param question: The user query
+    :param chat_log: history of conversation
+    :return answer: the bot response
+    """
     if chat_log is None:
         chat_log = start_chat_log
+
     prompt = f'{chat_log}Human: {question}\nAI:'
+
+    # Model parameters chosen so as to give set the tune of a friendly and creative chatbot
     response = completion.create(
         prompt=prompt, engine="davinci", stop=['\nHuman'], temperature=0.9,
         top_p=1, frequency_penalty=0, presence_penalty=0.6, best_of=1,
         max_tokens=70)
+
     answer = response.choices[0].text.strip()
     return answer
 
