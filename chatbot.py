@@ -32,7 +32,7 @@ def ask(question, chat_log=None):
 
     # Model parameters chosen so as to give set the tune of a friendly and creative chatbot
     response = completion.create(
-        prompt=prompt, engine="davinci", stop=['\nHuman'], temperature=0.9,
+        prompt=prompt, engine="davinci", stop=["\n", " Human:", " AI:"], temperature=0.9,
         top_p=1, frequency_penalty=0, presence_penalty=0.6, best_of=1,
         max_tokens=70)
 
