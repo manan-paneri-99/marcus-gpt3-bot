@@ -32,7 +32,11 @@ Here are some examples:
   I hope you liked your conversation with me. For more inspiring travel    destinations, keep visiting Marcus.ai'
   ```
   
- Beta version of Twilio SMS deployment is also available.
+  
+ ### Marcus GPT3 bot, Twilio WhatsApp Sandbox deployment
+ ![marcus_wapp](marcus_whatsapp.jpg)
+ 
+ Twilio SMS deployment is also available.
  
  ![marcus_sms](marcus_sms.jpg)
  
