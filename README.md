@@ -1,6 +1,6 @@
 # marcus-gpt3-bot
 
-Marcus is a GPT-3 based travel guide chatbot that give you friendly and creative travel suggestions
+Marcus is a GPT-3 based travel guide chatbot that gives you friendly and creative travel suggestions
 
 Here are some examples:
 1. Where to chill in Las Vegas?
